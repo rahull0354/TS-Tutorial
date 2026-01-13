@@ -1,5 +1,7 @@
 import "./App.css";
 import { Greet } from "./components/Greet";
+import { Heading } from "./components/Heading";
+import { Oscar } from "./components/Oscar";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
@@ -38,6 +40,12 @@ function App() {
 
       {/* conditional rendering using props demo: */}
       <Status status="loading" />
+
+      {/* Rendering child component inside parent component */}
+      <Heading>Placeholder Text Here...</Heading>
+      <Oscar>
+        <Heading>Oscar goes to Leonardo Decaprio!</Heading>
+      </Oscar>
     </div>
   );
 }
