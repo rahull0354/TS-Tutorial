@@ -3,6 +3,10 @@ import { Button } from "./components/EventProps/Button";
 import { Input } from "./components/EventProps/Input";
 import { Greet } from "./components/Greet";
 import { Heading } from "./components/Heading";
+import { Box } from "./components/Hooks/Context/Box";
+import { ThemeContextProvider } from "./components/Hooks/Context/ThemeContext";
+import { UserContextProvider } from "./components/Hooks/Context/UserContext";
+import { UserLogin } from "./components/Hooks/Context/User";
 import { Counter } from "./components/Hooks/Counter";
 import { LoggedIn } from "./components/Hooks/LoggedIn";
 import { User } from "./components/Hooks/User";
@@ -63,9 +67,24 @@ function App() {
       {/* <Container styles={{border: '1px solid black', padding: '1rem', color: 'red'}} /> */}
 
       {/* props using hooks */}
+
+      {/* UseState Demo: */}
       {/* <LoggedIn /> */}
       {/* <User /> */}
-      <Counter />
+
+      {/* UseReducer Demo: */}
+      {/* <Counter /> */}
+
+      {/* UseContext Demo: */}
+      {/* <Box />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider> */}
+
+      {/* useContext Future Value Demo: */}
+      <UserContextProvider>
+        <UserLogin />
+      </UserContextProvider>
     </div>
   );
 }
