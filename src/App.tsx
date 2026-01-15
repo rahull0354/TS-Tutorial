@@ -3,7 +3,9 @@ import { Button } from "./components/EventProps/Button";
 import { Input } from "./components/EventProps/Input";
 import { Greet } from "./components/Greet";
 import { Heading } from "./components/Heading";
+import { Counter } from "./components/Hooks/Counter";
 import { LoggedIn } from "./components/Hooks/LoggedIn";
+import { User } from "./components/Hooks/User";
 import { Oscar } from "./components/Oscar";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
@@ -61,7 +63,9 @@ function App() {
       {/* <Container styles={{border: '1px solid black', padding: '1rem', color: 'red'}} /> */}
 
       {/* props using hooks */}
-      <LoggedIn />
+      {/* <LoggedIn /> */}
+      {/* <User /> */}
+      <Counter />
     </div>
   );
 }
