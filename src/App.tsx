@@ -17,6 +17,7 @@ import { Status } from "./components/Status";
 import { Container } from "./components/StyleProps/Container";
 import { DomRef } from "./components/Hooks/Ref/DomRef";
 import { MutableRef } from "./components/Hooks/Ref/MutableRef";
+import { ClassCounter } from './components/class/ClassCounter';
 
 function App() {
   const personName = {
@@ -94,7 +95,10 @@ function App() {
       {/* <DomRef /> */}
 
       {/* Demo for MutableRef */}
-      <MutableRef />
+      {/* <MutableRef /> */}
+
+      {/* Class Demo: */}
+      <ClassCounter message="The Count Value is: " />
     </div>
   );
 }
