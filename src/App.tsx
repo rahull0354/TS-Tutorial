@@ -20,6 +20,8 @@ import { MutableRef } from "./components/Hooks/Ref/MutableRef";
 import { ClassCounter } from './components/class/ClassCounter';
 import { List } from "./components/Generics/List";
 import { RandomNumber } from "./components/Restriction/RandomNumber";
+import { Toast } from "./components/TemplateLiteral/Toast";
+import { CustomButton } from "./components/HTML/Button";
 
 function App() {
   const personName = {
@@ -113,7 +115,15 @@ function App() {
       /> */}
 
       {/* Restriction Demo: */}
-      <RandomNumber value={10} isPositive />
+      {/* <RandomNumber value={10} isPositive /> */}
+
+      {/* Template Literal Demo: */}
+      {/* <Toast position="right-bottom" /> */}
+
+      {/* Embedding HTML Elements */}
+      <CustomButton variant="primary" onClick={() => console.log('Clicked')}>
+        Primary Button
+      </CustomButton>
     </div>
   );
 }
