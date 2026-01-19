@@ -18,6 +18,8 @@ import { Container } from "./components/StyleProps/Container";
 import { DomRef } from "./components/Hooks/Ref/DomRef";
 import { MutableRef } from "./components/Hooks/Ref/MutableRef";
 import { ClassCounter } from './components/class/ClassCounter';
+import { List } from "./components/Generics/List";
+import { RandomNumber } from "./components/Restriction/RandomNumber";
 
 function App() {
   const personName = {
@@ -98,7 +100,20 @@ function App() {
       {/* <MutableRef /> */}
 
       {/* Class Demo: */}
-      <ClassCounter message="The Count Value is: " />
+      {/* <ClassCounter message="The Count Value is: " /> */}
+
+      {/* Generics Demo: */}
+      {/* <List 
+        items={['Iron Man', 'Captain America', 'Thor', 'Hulk', 'Black Widow', 'Hawkeye']}
+        onClick={(item) => console.log(item)}
+      />
+      <List 
+        items={[1,2,3,4,5,6]}
+        onClick={(item) => console.log(item)}
+      /> */}
+
+      {/* Restriction Demo: */}
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
